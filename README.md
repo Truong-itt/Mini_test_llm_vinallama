@@ -18,7 +18,7 @@ Chào mừng bạn đến với **Vinallama LLM Training và Hệ Thống Hỏi 
 
 Dự án này sử dụng mô hình ngôn ngữ lớn **Vinallama-7B Chat** để tạo ra một hệ thống hỏi đáp tiên tiến. Quy trình bao gồm:
 
-- **Fine-Tuning** mô hình Vinallama sử dụng **QLoRA** để tối ưu hóa việc sử dụng tài nguyên.
+- **Fine-Tuning** mô hình Vinallama cho việc sử dụng tài nguyên.
 - **Xử Lý Tệp PDF** để trích xuất và chuẩn bị dữ liệu.
 - **Xây Dựng Cơ Sở Dữ Liệu Vector FAISS** để hỗ trợ tìm kiếm tương tự hiệu quả.
 - **Triển Khai Chatbot Hỏi Đáp** có khả năng trả lời các câu hỏi dựa trên dữ liệu đã được fine-tuned.
