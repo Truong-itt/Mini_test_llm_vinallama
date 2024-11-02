@@ -66,12 +66,16 @@ cd models
 [Hugging Face - MiniLM](https://huggingface.co/caliex/all-MiniLM-L6-v2-f16.gguf/tree/main) và
 [Hugging Face - Vinallama](https://huggingface.co/vilm/vinallama-7b-chat-GGUF/tree/main)
 
+---
+
 ## 4. Chuẩn Bị Cơ Sở Dữ Liệu Vector
 
 ```bash
 cd ..
 python .\prepare_vector_db.py
 ```
+
+---
 
 ## 5. Chạy Bot Hỏi Đáp
 
