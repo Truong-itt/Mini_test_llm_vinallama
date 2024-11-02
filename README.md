@@ -7,16 +7,11 @@ Chào mừng bạn đến với **Vinallama LLM Training và Hệ Thống Hỏi 
 1. [Giới Thiệu](#1-giới-thiệu)
 2. [Yêu Cầu Đầu Vào](#2-yêu-cầu-đầu-vào)
 3. [Cài Đặt](#3-cài-đặt)
-4. [Thiết Lập Môi Trường Ảo](#4-thiết-lập-môi-trường-ảo)
-5. [Chuẩn Bị Cơ Sở Dữ Liệu Vector](#5-chuẩn-bị-cơ-sở-dữ-liệu-vector)
-6. [Chạy Bot Hỏi Đáp](#6-chạy-bot-hỏi-đáp)
-7. [Cấu Trúc Dự Án](#7-cấu-trúc-dự-án)
-8. [Cấu Hình](#8-cấu-hình)
-9. [Khắc Phục Lỗi](#9-khắc-phục-lỗi)
-10. [Giấy Phép](#10-giấy-phép)
-11. [Lời Cảm Ơn](#11-lời-cảm-ơn)
-12. [Liên Hệ](#12-liên-hệ)
-
+    - [3.1. Clone Repository](#31-clone-repository)
+    - [3.2. Thiết Lập Môi Trường Ảo và thư viện cần thiết](#32-thiết-lập-môi-trường-ảo)
+    - [3.3. Tải Xuống Các Mô Hình](#34-tải-xuống-các-mô-hình)
+4. [Chuẩn Bị Cơ Sở Dữ Liệu Vector](#4-chuẩn-bị-cơ-sở-dữ-liệu-vector)
+5. [Chạy Bot Hỏi Đáp](#5-chạy-bot-hỏi-đáp)
 ---
 
 ## 1. Giới Thiệu
@@ -47,13 +42,39 @@ Trước khi bắt đầu, hãy đảm bảo bạn đã đáp ứng các yêu c�
 
 ### 3.1. Clone Repository
 
+Đầu tiên, clone repository này về máy tính của bạn:
+
 ```bash
-Yêu cầu: python 3.12.X
 git clone https://github.com/yourusername/vinallama-llm-train.git
 cd vinallama-llm-train
+```
+
+### 3.2. Python Venv - Lib
+
+```bash
 python -m venv .venv
 .venv\Scripts\activate
 pip freeze > requirements.txt
-python .\prepare_vector_db.py
-python .\bot.py
+```
 
+### 3.3. Download Model
+Để tải xuống các mô hình cần thiết, hãy tạo thư mục `models`, chuyển vào đó, và tải các tệp mô hình từ các liên kết sau:
+```bash
+mkdir models
+cd models
+```
+[Hugging Face - MiniLM](https://huggingface.co/caliex/all-MiniLM-L6-v2-f16.gguf/tree/main)
+[Hugging Face - Vinallama](https://huggingface.co/vilm/vinallama-7b-chat-GGUF/tree/main)
+
+## 4. Chuẩn Bị Cơ Sở Dữ Liệu Vector
+
+```bash
+cd ..
+python .\prepare_vector_db.py
+```
+
+## 5. Chạy Bot Hỏi Đáp
+
+```bash
+python .\bot.py
+```
