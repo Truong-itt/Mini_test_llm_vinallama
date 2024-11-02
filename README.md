@@ -1,6 +1,6 @@
 # Vinallama LLM Training và Hệ Thống Hỏi Đáp
 
-Chào mừng bạn đến với **Vinallama LLM Training và Hệ Thống Hỏi Đáp**! Dự án này trình bày cách **fine-tune** mô hình **Vinallama-7B Chat**, xử lý dữ liệu từ các tệp PDF, xây dựng cơ sở dữ liệu vector FAISS, và triển khai một chatbot hỏi đáp sử dụng LangChain cùng các thư viện mạnh mẽ khác.
+Chào mừng bạn đến với **Vinallama LLM Training và Hệ Thống Hỏi Đáp**! Dự án này trình bày cách **fine-tune** mô hình **Vinallama-7B Chat**, xử lý dữ liệu từ các tệp PDF, xây dựng cơ sở dữ liệu vector **FAISS**, và triển khai một chatbot hỏi đáp sử dụng **LangChain** cùng các thư viện mạnh mẽ khác.
 
 ## Mục Lục
 
